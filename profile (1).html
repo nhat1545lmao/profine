@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhat1545 Profile</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        
+        :root {
+            --bg-color: #F0F4F8; 
+            --card-bg-color: rgba(255, 255, 255, 0.9); 
+            --text-color: #333;
+            --text-color-secondary: #555;
+            --primary-color: #8A9BFF; 
+            --secondary-color: #7E87C2;
+            --border-color: #EAEAEA;
+            --shadow-light: 0 4px 15px rgba(0, 0, 0, 0.08);
+            --shadow-strong: 0 5px 20px rgba(0, 0, 0, 0.12);
+            --border-radius-main: 25px; 
+            --border-radius-inner: 18px; 
+            
+            --pixel-bg-url: url('https://cdn.discordapp.com/attachments/1283072296726298738/1439133745918640139/wallpaper-van-gogh-cute-cho-may-tinh.png?ex=6919693e&is=691817be&hm=971411b4d702fac3ae87ac46607ab9f5159c80c3590f89d6eb39155cdc85db2a&');
+        }
+
+        body.dark-mode {
+            --bg-color: #1A1D2A;
+            --card-bg-color: rgba(42, 46, 60, 0.95); 
+            --text-color: #E0E0E0;
+            --text-color-secondary: #AAAAAA;
+            --primary-color: #9DAAFE;
+            --secondary-color: #98A0D0;
+            --border-color: #3A3E52;
+            --shadow-light: 0 4px 15px rgba(0, 0, 0, 0.15);
+            --shadow-strong: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-image: var(--pixel-bg-url);
+            background-color: var(--bg-color);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: var(--text-color);
+            
+            transition: background-color 0.4s ease, color 0.4s ease;
+        }
+        
+        .firefly-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+        
+        .firefly {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background-color: #00FFC1; 
+            border-radius: 50%;
+            box-shadow: 0 0 6px #00FFC1, 0 0 10px #00FFC1;
+            animation: move 10s linear infinite alternate,
+                         fade 10s linear infinite;
+            opacity: 0;
+        }
+
+        .firefly.firefly-purple {
+            background-color: #BC13FE; 
+            box-shadow: 0 0 6px #BC13FE, 0 0 10px #BC13FE;
+        }
+
+        @keyframes move {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            20% { transform: translate(15px, -25px) rotate(20deg); }
+            40% { transform: translate(-10px, -10px) rotate(-10deg); }
+            60% { transform: translate(20px, 15px) rotate(30deg); }
+            80% { transform: translate(-5px, 25px) rotate(-20deg); }
+            100% { transform: translate(0, 0) rotate(0deg); }
+        }
+
+        @keyframes fade {
+            0%, 100% { opacity: 0; }
+            50% { opacity: 0.9; }
+        }
+
+        .firefly:nth-child(1) { top: 10%; left: 15%; animation-delay: 0s, 0s; animation-duration: 12s, 12s; }
+        .firefly:nth-child(2) { top: 20%; left: 80%; animation-delay: -2s, -2s; animation-duration: 10s, 10s; }
+        .firefly:nth-child(3) { top: 35%; left: 50%; animation-delay: -4s, -4s; animation-duration: 13s, 13s; }
+        .firefly:nth-child(4) { top: 50%; left: 20%; animation-delay: -6s, -6s; animation-duration: 11s, 11s; }
+        .firefly:nth-child(5) { top: 60%; left: 90%; animation-delay: -8s, -8s; animation-duration: 14s, 14s; }
+        .firefly:nth-child(6) { top: 75%; left: 5%; animation-delay: -10s, -10s; animation-duration: 12s, 12s; }
+        .firefly:nth-child(7) { top: 85%; left: 60%; animation-delay: -12s, -12s; animation-duration: 10s, 10s; }
+        .firefly:nth-child(8) { top: 5%; left: 40%; animation-delay: -14s, -14s; animation-duration: 13s, 13s; }
+        .firefly:nth-child(9) { top: 90%; left: 30%; animation-delay: -16s, -16s; animation-duration: 11s, 11s; }
+        .firefly:nth-child(10) { top: 65%; left: 70%; animation-delay: -18s, -18s; animation-duration: 14s, 14s; }
+        .firefly:nth-child(11) { top: 15%; left: 5%; animation-delay: -1s, -1s; animation-duration: 15s, 15s; }
+        .firefly:nth-child(12) { top: 25%; left: 95%; animation-delay: -3s, -3s; animation-duration: 11s, 11s; }
+        .firefly:nth-child(13) { top: 45%; left: 30%; animation-delay: -5s, -5s; animation-duration: 14s, 14s; }
+        .firefly:nth-child(14) { top: 55%; left: 75%; animation-delay: -7s, -7s; animation-duration: 12s, 12s; }
+        .firefly:nth-child(15) { top: 70%; left: 40%; animation-delay: -9s, -9s; animation-duration: 16s, 16s; }
+        .firefly:nth-child(16) { top: 80%; left: 10%; animation-delay: -11s, -11s; animation-duration: 13s, 13s; }
+        .firefly:nth-child(17) { top: 95%; left: 85%; animation-delay: -13s, -13s; animation-duration: 11s, 11s; }
+        .firefly:nth-child(18) { top: 8%; left: 65%; animation-delay: -15s, -15s; animation-duration: 15s, 15s; }
+        .firefly:nth-child(19) { top: 40%; left: 85%; animation-delay: -17s, -17s; animation-duration: 12s, 12s; }
+        .firefly:nth-child(20) { top: 92%; left: 55%; animation-delay: -19s, -19s; animation-duration: 14s, 14s; }
+        .firefly:nth-child(21) { top: 12%; left: 25%; animation-delay: -1.5s, -1.5s; animation-duration: 11s, 11s; }
+        .firefly:nth-child(22) { top: 22%; left: 70%; animation-delay: -3.5s, -3.5s; animation-duration: 13s, 13s; }
+        .firefly:nth-child(23) { top: 38%; left: 40%; animation-delay: -5.5s, -5.5s; animation-duration: 12s, 12s; }
+        .firefly:nth-child(24) { top: 53%; left: 10%; animation-delay: -7.5s, -7.5s; animation-duration: 14s, 14s; }
+        .firefly:nth-child(25) { top: 63%; left: 80%; animation-delay: -9.5s, -9.5s; animation-duration: 11s, 11s; }
+        .firefly:nth-child(26) { top: 78%; left: 15%; animation-delay: -11.5s, -11.5s; animation-duration: 13s, 13s; }
+        .firefly:nth-child(27) { top: 88%; left: 70%; animation-delay: -13.5s, -13.5s; animation-duration: 12s, 12s; }
+        .firefly:nth-child(28) { top: 7%; left: 50%; animation-delay: -15.5s, -15.5s; animation-duration: 14s, 14s; }
+        .firefly:nth-child(29) { top: 93%; left: 20%; animation-delay: -17.5s, -17.5s; animation-duration: 11s, 11s; }
+        .firefly:nth-child(30) { top: 68%; left: 80%; animation-delay: -19.5s, -19.5s; animation-duration: 13s, 13s; }
+        .firefly:nth-child(31) { top: 18%; left: 10%; animation-delay: -2.5s, -2.5s; animation-duration: 15s, 15s; }
+        .firefly:nth-child(32) { top: 28%; left: 90%; animation-delay: -4.5s, -4.5s; animation-duration: 12s, 12s; }
+        .firefly:nth-child(33) { top: 48%; left: 35%; animation-delay: -6.5s, -6.5s; animation-duration: 14s, 14s; }
+        .firefly:nth-child(34) { top: 58%; left: 70%; animation-delay: -8.5s, -8.5s; animation-duration: 11s, 11s; }
+        .firefly:nth-child(35) { top: 73%; left: 45%; animation-delay: -10.5s, -10.5s; animation-duration: 16s, 16s; }
+        .firefly:nth-child(36) { top: 83%; left: 15%; animation-delay: -12.5s, -12.5s; animation-duration: 13s, 13s; }
+        .firefly:nth-child(37) { top: 98%; left: 80%; animation-delay: -14.5s, -14.5s; animation-duration: 11s, 11s; }
+
+        .theme-switcher {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background-color: var(--card-bg-color);
+            border-radius: 50px;
+            padding: 8px;
+            box-shadow: var(--shadow-light);
+            cursor: pointer;
+            backdrop-filter: blur(5px);
+            display: flex;
+            align-items: center;
+            transition: background-color 0.4s ease, border-color 0.4s ease;
+        }
+        
+        .theme-switcher .icon {
+            color: var(--text-color);
+            transition: all 0.4s ease;
+            flex-shrink: 0; 
+        }
+        
+        .theme-switcher .theme-text {
+            color: var(--text-color);
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin: 0 8px 0 5px;
+            white-space: nowrap;
+            transition: color 0.4s ease;
+        }
+
+        #theme-toggle {
+            display: none;
+        }
+        
+        body:not(.dark-mode) .theme-switcher .moon,
+        body:not(.dark-mode) .theme-switcher .light-text {
+            display: none;
+        }
+        body.dark-mode .theme-switcher .sun,
+        body.dark-mode .theme-switcher .dark-text {
+            display: none;
+        }
+
+        .profile-container {
+            width: 100%;
+            max-width: 800px;
+            background-color: var(--card-bg-color);
+            border-radius: var(--border-radius-main);
+            box-shadow: var(--shadow-strong);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+            transition: background-color 0.4s ease, border-color 0.4s ease;
+        }
+
+        .cover-photo {
+            width: 100%;
+            height: 200px;
+            background-image: url('cover.jpg');
+            background-size: cover;
+            background-position: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .avatar-container {
+            position: absolute;
+            top: 140px;
+            left: 40px;
+            width: 120px;
+            height: 120px;
+        }
+
+        .avatar {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 5px solid var(--card-bg-color);
+            box-shadow: var(--shadow-light);
+            display: block;
+        }
+        
+        .status-dot {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            width: 25px;
+            height: 25px;
+            background-color: #57F287;
+            border: 4px solid var(--card-bg-color);
+            border-radius: 50%;
+            box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+        }
+
+        .user-info {
+            padding: 70px 40px 30px;
+        }
+
+        .user-info h1 {
+            font-size: 2.3rem;
+            font-weight: 700;
+            color: #8A9BFF;
+            line-height: 1.2;
+        }
+
+        .user-info .job {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--text-color-secondary);
+            margin-top: 5px;
+        }
+
+        .user-info .location {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 10px;
+            color: var(--text-color-secondary);
+            font-size: 0.95rem;
+        }
+        
+        .user-info .location span {
+            color: #F08080;
+        }
+
+        .user-info .location .icon {
+            width: 16px;
+            height: 16px;
+        }
+
+        .status-section {
+            padding: 20px 40px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .status-box {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background-color: var(--bg-color);
+            border-radius: var(--border-radius-inner);
+            padding: 15px 20px;
+            box-shadow: var(--shadow-light);
+            
+            border: 2px solid var(--primary-color);
+            
+            transition: background-color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+        }
+        
+        body.dark-mode .status-box {
+            background-color: #2A2E3C;
+        }
+
+        .status-box + .status-box {
+            margin-top: 15px;
+        }
+
+        .status-box .icon-container {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        .status-box .icon-container svg,
+        .status-box .icon-container .icon {
+            width: 24px;
+            height: 24px;
+            color: var(--primary-color);
+        }
+        
+        .status-box .icon-container .discord-icon {
+             color: #5865F2;
+        }
+        
+        body.dark-mode .status-box .icon-container .discord-icon {
+            color: #7289DA;
+        }
+
+        .status-box h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--text-color);
+            margin-right: 10px;
+            white-space: nowrap;
+        }
+
+        .status-box .status-text {
+            font-size: 0.95rem;
+            color: var(--text-color-secondary);
+            flex-grow: 1;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .status-box .title-and-status {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-grow: 1;
+        }
+
+        .music-player {
+            margin: 20px 40px;
+            background-color: #383838;
+            border-radius: var(--border-radius-inner);
+            padding: 15px 20px;
+            color: #FFFFFF;
+            box-shadow: var(--shadow-light);
+        }
+        
+        body.dark-mode .music-player {
+            background-color: #2D2D2D;
+        }
+
+        .music-player .song-title {
+            font-size: 0.95rem;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 12px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .music-player .player-controls {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .music-player .time-display {
+            font-size: 0.8rem;
+            min-width: 40px;
+            text-align: center;
+        }
+
+        .music-player .control-btn {
+            background: none;
+            border: none;
+            color: #FFFFFF;
+            cursor: pointer;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .music-player .control-btn .icon {
+            width: 20px;
+            height: 20px;
+        }
+        
+        .music-player .control-btn.play-pause-btn .icon.pause {
+            display: none;
+        }
+        
+        .music-player.playing .play-pause-btn .icon.pause {
+            display: block;
+        }
+        
+        .music-player.playing .play-pause-btn .icon.play {
+            display: none;
+        }
+
+        .music-player .timeline {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 100%;
+            height: 5px;
+            background: #555;
+            outline: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .music-player .timeline::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 14px;
+            height: 14px;
+            background: #FFF;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        
+        .music-player .timeline::-moz-range-thumb {
+            width: 14px;
+            height: 14px;
+            background: #FFF;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 10px 40px 30px;
+        }
+
+        .social-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: var(--primary-color);
+            color: #FFF;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            box-shadow: 0 4px 10px -2px rgba(138, 155, 255, 0.5);
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.4s ease;
+        }
+        
+        .social-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px -2px rgba(138, 155, 255, 0.6);
+        }
+
+        .social-btn .icon {
+            width: 18px;
+            height: 18px;
+        }
+
+        .hobbies-section {
+            padding: 20px 40px 30px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .hobbies-section h2 {
+            text-align: center;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: var(--text-color);
+        }
+
+        .hobbies-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .hobby-card {
+            background-color: var(--bg-color);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius-inner);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.4s ease, border-color 0.4s ease;
+        }
+        
+        .hobby-card:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-light);
+        }
+        
+        body.dark-mode .hobby-card {
+             background-color: #2A2E3C;
+        }
+
+        .hobby-card .icon-container {
+            width: 40px;
+            height: 40px;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--primary-color);
+            color: #FFF;
+            border-radius: 50%;
+        }
+
+        .hobby-card .icon {
+            width: 22px;
+            height: 22px;
+        }
+
+        .hobby-card h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: var(--text-color);
+        }
+
+        .hobby-card p {
+            font-size: 0.85rem;
+            color: var(--text-color-secondary);
+            line-height: 1.5;
+        }
+
+        .skill-footer {
+            padding: 20px 40px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--text-color-secondary);
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .user-info h1, .user-info .job, .user-info .location, .status-box h3, .status-box .status-text, .hobbies-section h2, .hobby-card h4, .hobby-card p, .skill-footer p, .skill-footer h2, .location .icon {
+            transition: color 0.4s ease;
+        }
+
+        
+        .loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #1a1d2a; 
+            
+            background-image: url('https://cdn.discordapp.com/attachments/1283072296726298738/1439133745918640139/wallpaper-van-gogh-cute-cho-may-tinh.png?ex=6919693e&is=691817be&hm=971411b4d702fac3ae87ac46607ab9f5159c80c3590f89d6eb39155cdc85db2a&');
+            
+            background-size: cover;
+            background-position: center;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.8s ease-out, visibility 0.8s ease-out;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .loading-screen.hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        .loading-title {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 2.5rem; 
+            color: #FFC0CB; 
+            text-shadow: 0 0 5px #FF1493, 0 0 10px #FF1493, 0 0 15px #FF1493, 0 0 20px #FF1493;
+            margin-bottom: 30px;
+            position: relative;
+            overflow: hidden; 
+            -webkit-text-stroke: 1px #FF1493; 
+        }
+        
+        .loading-title::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%; 
+            width: 100%;
+            height: 100%;
+            
+            background: linear-gradient(
+                90deg, 
+                transparent, 
+                rgba(255, 255, 255, 0.7), 
+                transparent
+            );
+            
+            transform: skewX(-25deg); 
+            animation: shine 4s linear infinite; 
+        }
+
+        @keyframes shine {
+            0% { left: -100%; }
+            80%, 100% { left: 100%; } 
+        }
+
+        .progress-bar-container {
+            width: 80%;
+            max-width: 500px;
+            padding: 4px; 
+            border-radius: 10px;
+            
+            background: linear-gradient(90deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+            background-size: 400% 400%;
+            animation: rgb-border 3s linear infinite;
+        }
+
+        @keyframes rgb-border {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+
+        .progress-bar {
+            width: 0%; 
+            height: 20px;
+            background-color: #ffffff;
+            border-radius: 6px;
+            transition: width 0.1s linear; 
+        }
+
+        .progress-percentage {
+            margin-top: 15px;
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #fff;
+            text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .firefly-container,
+        .theme-switcher,
+        .profile-container {
+            opacity: 0;
+            transition: opacity 0.5s ease-in;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            .theme-switcher {
+                top: 10px;
+                right: 10px;
+            }
+            
+            .theme-switcher .theme-text {
+                display: none; 
+            }
+
+            .cover-photo {
+                height: 150px;
+            }
+
+            .avatar-container {
+                width: 90px;
+                height: 90px;
+                top: 105px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .avatar {
+                border-width: 4px;
+            }
+
+            .status-dot {
+                width: 20px;
+                height: 20px;
+                bottom: 3px;
+                right: 3px;
+                border-width: 3px;
+            }
+
+            .user-info {
+                padding: 60px 20px 20px; 
+                text-align: center;
+            }
+            
+            .user-info .location {
+                justify-content: center;
+                font-size: 0.9rem;
+            }
+
+            .user-info h1 {
+                font-size: 2rem;
+            }
+            .user-info .job {
+                font-size: 0.9rem;
+            }
+
+            .status-section {
+                padding: 20px;
+            }
+            
+            .status-box {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+                padding: 12px 15px;
+            }
+            
+            .status-box + .status-box {
+                margin-top: 15px;
+            }
+            
+            .status-box .title-and-status {
+                width: 100%;
+                justify-content: space-between;
+                flex-direction: row !important; 
+                align-items: center !important;
+                gap: 10px !important;
+            }
+            
+            .status-box h3 {
+                font-size: 1rem;
+            }
+            
+            .status-box .status-text {
+                font-size: 0.85rem;
+                text-align: right;
+            }
+            
+            .status-box #custom-status {
+                 font-size: 0.85rem !important;
+                 font-weight: 400 !important;
+                 text-align: right !important;
+            }
+            
+            #activity-box .title-and-status {
+                flex-direction: column !important;
+                align-items: flex-start !important;
+                gap: 0 !important;
+            }
+            
+            #activity-box #activity-name {
+                 font-size: 1rem !important;
+                 font-weight: 400 !important;
+                 text-align: left !important;
+                 color: var(--text-color) !important;
+            }
+
+            .music-player {
+                margin: 20px;
+                padding: 12px;
+            }
+            
+            .music-player .player-controls {
+                gap: 5px;
+            }
+            
+            .music-player .control-btn {
+                padding: 3px;
+            }
+            
+            .music-player .time-display {
+                min-width: 35px;
+                font-size: 0.75rem;
+            }
+
+            .social-links {
+                padding: 10px 20px 20px;
+            }
+
+            .hobbies-section {
+                padding: 20px;
+            }
+
+            .hobbies-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .skill-footer {
+                padding: 20px;
+            }
+        }
+        
+        @media (max-width: 380px) {
+            .music-player .control-btn.prev,
+            .music-player .control-btn.next {
+                display: none;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="loading-screen">
+        <h1 class="loading-title">Nhat1545</h1>
+        <div class="progress-bar-container">
+            <div class="progress-bar" id="loading-progress-bar"></div>
+        </div>
+        <div class="progress-percentage" id="loading-percentage">0%</div>
+    </div>
+    <div class="firefly-container">
+        <div class="firefly"></div> <div class="firefly"></div> <div class="firefly"></div> <div class="firefly"></div> <div class="firefly"></div> <div class="firefly"></div> <div class="firefly"></div> <div class="firefly"></div> <div class="firefly"></div> <div class="firefly"></div> <div class="firefly"></div> <div class="firefly"></div> <div class="firefly"></div> <div class="firefly"></div> <div class="firefly"></div> <div class="firefly"></div> <div class="firefly"></div> <div class="firefly"></div> <div class="firefly"></div> <div class="firefly"></div> <div class="firefly firefly-purple"></div> <div class="firefly firefly-purple"></div> <div class="firefly firefly-purple"></div> <div class="firefly firefly-purple"></div> <div class="firefly firefly-purple"></div> <div class="firefly firefly-purple"></div> <div class="firefly firefly-purple"></div> <div class="firefly firefly-purple"></div> <div class="firefly firefly-purple"></div> <div class="firefly firefly-purple"></div> <div class="firefly firefly-purple"></div> <div class="firefly firefly-purple"></div> <div class="firefly firefly-purple"></div> <div class="firefly firefly-purple"></div> <div class="firefly firefly-purple"></div> <div class="firefly firefly-purple"></div> <div class="firefly firefly-purple"></div> </div>
+
+
+    <label class="theme-switcher" for="theme-toggle" title="Chuyển đổi chế độ sáng/tối">
+        <input type="checkbox" id="theme-toggle">
+        
+        <i data-feather="moon" class="icon moon"></i>
+        <span class="theme-text light-text">Light Mode</span>
+        
+        <i data-feather="sun" class="icon sun"></i>
+        <span class="theme-text dark-text">Dark Mode</span>
+    </label>
+
+    <main class="profile-container">
+        
+        <div class="cover-photo" style="background-image: url('https://cdn.discordapp.com/attachments/1422229772343185549/1439519333918314658/hinh-anh-gif-thanh-pho-xuong-den.png?ex=691ad05a&is=69197eda&hm=6dd1977ce1c6fa8e019daf67da4e1eb2176472cc5bb694e34e81e03c5627a91d&');"></div>
+        
+        <div class="avatar-container">
+            <img src="https://cdn.discordapp.com/attachments/1283072296726298738/1439517449484505211/OgoZuCWWrPdDOxE7b1s_nHuPNMKyuBcnDYDUo0KsncozBRtoX6Ki7k1stRebQ7kwM3y1903cLeQs108-c-k-c0x00ffffff-no-rj.png?ex=691ace98&is=69197d18&hm=b18999fa48e3cf9ae12af61a2da84efd14c1e5f7d9f77cbc33fcd52e332456af&" alt="Avatar của _MrBitt" class="avatar" 
+                 onerror="this.src='https://cdn.discordapp.com/attachments/1283072296726298738/1439517449484505211/OgoZuCWWrPdDOxE7b1s_nHuPNMKyuBcnDYDUo0KsncozBRtoX6Ki7k1stRebQ7kwM3y1903cLeQs108-c-k-c0x00ffffff-no-rj.png?ex=691ace98&is=69197d18&hm=b18999fa48e3cf9ae12af61a2da84efd14c1e5f7d9f77cbc33fcd52e332456af&';">
+            <div class="status-dot"></div>
+        </div>
+
+        <section class="user-info">
+            <h1>Nhat1545</h1>
+            <p class="job">Nhật sai đẹp chiêu</p>
+            <div class="location">
+                <i data-feather="map-pin" class="icon"></i>
+                <span>Hải Phòng | Việt Nam</span>
+            </div>
+        </section>
+
+        <section class="status-section">
+            <div class="status-box">
+                <div class="icon-container">
+                    <svg class="discord-icon" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.317 4.36982C18.697 3.66982 16.987 3.16982 15.207 2.86982C15.017 3.26982 14.807 3.70982 14.627 4.10982C13.047 3.86982 11.417 3.86982 9.83704 4.10982C9.65704 3.70982 9.44704 3.26982 9.25704 2.86982C7.47704 3.16982 5.76704 3.66982 4.14704 4.36982C1.60704 8.16982 0.717041 11.7998 1.14704 15.3898C3.06704 16.5898 4.90704 17.3998 6.67704 17.9898C7.03704 17.3498 7.35704 16.6698 7.63704 15.9698C6.98704 15.7698 6.34704 15.5298 5.73704 15.2498C5.86704 15.1198 5.99704 14.9898 6.11704 14.8598C9.56704 16.6898 14.887 16.6898 18.337 14.8598C18.457 14.9898 18.587 15.1198 18.717 15.2498C18.107 15.5298 17.467 15.7698 16.817 15.9698C17.097 16.6698 17.417 17.3498 17.777 17.9898C19.547 17.3998 21.387 16.5898 23.307 15.3898C23.867 10.9898 22.787 7.51982 20.317 4.36982ZM8.67704 13.3898C7.68704 13.3898 6.89704 12.5098 6.89704 11.3898C6.89704 10.2698 7.68704 9.38982 8.67704 9.38982C9.66704 9.38982 10.457 10.2698 10.437 11.3898C10.437 12.5098 9.66704 13.3898 8.67704 13.3898ZM15.767 13.3898C14.777 13.3898 13.987 12.5098 13.987 11.3898C13.987 10.2698 14.777 9.38982 15.767 9.38982C16.757 9.38982 17.547 10.2698 17.527 11.3898C17.527 12.5098 16.757 13.3898 15.767 13.3898Z"/>
+                    </svg>
+                </div>
+                <div class="title-and-status" style="flex-direction: column; align-items: flex-start; gap: 0;">
+                    <h3>Status</h3>
+                    <span class="status-text" id="custom-status">Status: <span style="color: #FFD700;">đang hơi rảnh</span></span>
+                </div>
+            </div>
+            
+            <div class="status-box" id="activity-box">
+                <div class="icon-container">
+                    <span style="font-size: 24px;" id="activity-icon">🎮</span>
+                </div>
+                <div class="title-and-status" style="flex-direction: column; align-items: flex-start; gap: 0; width: 100%;">
+                    <span class="status-text" style="font-size: 1.05rem; color: var(--text-color); font-weight: 600;">
+                        Hoạt động hiện tại:
+                    </span>
+                    <span class="status-text" id="activity-name" style="font-size: 0.95rem; color: var(--text-color-secondary); margin-top: 2px;">
+                        Đang tải...
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <section class="music-player" id="music-player">
+            <audio id="audio-player" src="" preload="metadata"></audio>
+            
+            <p class="song-title" id="song-title">...</p>
+            
+            <div class="player-controls">
+                <button class="control-btn play-pause-btn" id="play-pause-btn" title="Phát/Tạm dừng">
+                    <i data-feather="play" class="icon play"></i>
+                    <i data-feather="pause" class="icon pause"></i>
+                </button>
+                <span class="time-display" id="current-time">0:00</span>
+                <input type="range" class="timeline" id="timeline" value="0" step="1">
+                
+                <span class="time-display" id="duration">0:00</span>
+                
+                <button class="control-btn prev" id="prev-btn" title="Bài trước">
+                    <i data-feather="skip-back" class="icon"></i>
+                </button>
+                <button class="control-btn next" id="next-btn" title="Bài kế">
+                    <i data-feather="skip-forward" class="icon"></i>
+                </button>
+            </div>
+        </section>
+
+        <section class="social-links">
+            <a href="https://discord.gg/vZQghqZ7Wp" class="social-btn" target="_blank">
+                <i data-feather="link" class="icon"></i>
+                <span>Vào Discord Mình</span>
+            </a>
+            </section>
+
+        <section class="hobbies-section">
+            <h2>Sở thích</h2>
+            <div class="hobbies-grid">
+                <div class="hobby-card">
+                    <div class="icon-container">
+                        <i data-feather="aperture" class="icon"></i> </div>
+                    <h4>Chơi game</h4>
+                    <p>Game yêu thích: Minecraft</p>
+                </div>
+                <div class="hobby-card">
+                    <div class="icon-container">
+                        <i data-feather="coffee" class="icon"></i> </div>
+                    <h4>Ăn vặt</h4>
+                    <p>Thích: trà sữa, snack</p>
+                </div>
+                <div class="hobby-card">
+                    <div class="icon-container">
+                        <i data-feather="moon" class="icon"></i> </div>
+                    <h4>Lười biếng</h4>
+                    <p>Hay ngủ hoặc nằm chơi</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="skill-footer">
+            <h2 style="font-size: 1.4rem; font-weight: 600; margin-bottom: 20px; color: var(--text-color); font-style: normal;">Skills của bản thân</h2>
+            <p style="font-style: normal;">Quay tay xả stress sau giờ học và làm việc cực căng thẳng</p>
+        </footer>
+
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const loadingScreen = document.querySelector('.loading-screen');
+            const progressBar = document.getElementById('loading-progress-bar');
+            const percentageText = document.getElementById('loading-percentage');
+            
+            const fireflies = document.querySelector('.firefly-container');
+            const themeSwitcher = document.querySelector('.theme-switcher');
+            const profileContainer = document.querySelector('.profile-container');
+
+            let progress = 0;
+            
+            function simulateLoading() {
+                const interval = setInterval(() => {
+                    progress += Math.floor(Math.random() * 3) + 1;
+                    
+                    if (progress > 100) {
+                        progress = 100;
+                    }
+                    
+                    progressBar.style.width = progress + '%';
+                    percentageText.textContent = progress + '%';
+
+                    if (progress === 100) {
+                        clearInterval(interval);
+                        
+                        setTimeout(() => {
+                            loadingScreen.classList.add('hidden');
+                            
+                            fireflies.style.opacity = 1;
+                            themeSwitcher.style.opacity = 1;
+                            profileContainer.style.opacity = 1;
+                            
+                        }, 500);
+                    }
+                }, 40); 
+            }
+
+            simulateLoading();
+
+            feather.replace();
+
+            const themeToggle = document.getElementById('theme-toggle');
+            const body = document.body;
+
+            const currentTheme = localStorage.getItem('theme');
+            if (currentTheme === 'dark') {
+                body.classList.add('dark-mode');
+                themeToggle.checked = true;
+            }
+
+            themeToggle.addEventListener('click', () => {
+                body.classList.toggle('dark-mode');
+                
+                if (body.classList.contains('dark-mode')) {
+                    localStorage.setItem('theme', 'dark');
+                } else {
+                    localStorage.setItem('theme', 'light');
+                }
+            });
+
+                
+            const DISCORD_USER_ID = '910872984191926313'; 
+            
+            const activityNameEl = document.getElementById('activity-name');
+            const activityIconEl = document.getElementById('activity-icon');
+
+            async function fetchDiscordPresence() {
+                if (DISCORD_USER_ID === 'YOUR_DISCORD_ID_HERE') {
+                    activityNameEl.textContent = 'Cần Discord ID';
+                    return;
+                }
+                
+                try {
+                    const response = await fetch(`https://api.lanyard.rest/v1/users/${DISCORD_USER_ID}`);
+                    if (!response.ok) {
+                        activityNameEl.textContent = 'Không thể tải (Lanyard)';
+                        return;
+                    }
+                    
+                    const { data } = await response.json();
+                    
+                    const primaryActivity = data.activities.find(act => act.type === 0);
+
+                    if (primaryActivity) {
+                        let activityText = primaryActivity.name;
+                        if (primaryActivity.details) {
+                            activityText = `${primaryActivity.name} (${primaryActivity.details})`;
+                        }
+                        activityNameEl.textContent = activityText;
+                        
+                        if (primaryActivity.assets && primaryActivity.assets.large_image) {
+                            const assetId = primaryActivity.assets.large_image;
+                            const appId = primaryActivity.application_id;
+                            activityIconEl.innerHTML = `<img src="https://cdn.discordapp.com/app-assets/${appId}/${assetId}.png" style="width: 24px; height: 24px; border-radius: 4px;" alt="Activity Icon">`;
+                        } else {
+                            activityIconEl.innerHTML = '🎮';
+                        }
+                        
+                    } else if (data.listening_to_spotify) {
+                        activityNameEl.textContent = `Nghe: ${data.spotify.song}`;
+                        activityIconEl.innerHTML = '🎧';
+                        
+                    } else {
+                        activityNameEl.textContent = 'Không có hoạt động';
+                        activityIconEl.innerHTML = '😴'; 
+                    }
+                    
+                } catch (error) {
+                    console.error('Lỗi khi lấy dữ liệu Lanyard:', error);
+                    activityNameEl.textContent = 'Lỗi API';
+                }
+            }
+
+            fetchDiscordPresence();
+            setInterval(fetchDiscordPresence, 10000); 
+
+            const player = document.getElementById('music-player');
+            const audio = document.getElementById('audio-player');
+            const playPauseBtn = document.getElementById('play-pause-btn');
+            const timeline = document.getElementById('timeline');
+            const currentTimeDisplay = document.getElementById('current-time');
+            const durationDisplay = document.getElementById('duration');
+            const songTitle = document.getElementById('song-title');
+            const nextBtn = document.getElementById('next-btn');
+            const prevBtn = document.getElementById('prev-btn');
+
+            const songs = [
+                {
+                    title: 'Wrong Times (ft. FOWLEX Snowz)',
+                    src: 'https://cdn.discordapp.com/attachments/1283072296726298738/1439108883942604920/music.mp3?ex=69195217&is=69180097&hm=9901a5b6b261f70563643a7e31128bbf73ac50735b682e0c50cb5437f420d06f&'
+                },
+                {
+                    title: 'Phép Màu (lofi chill) ',
+                    src: 'https://cdn.discordapp.com/attachments/1283072296726298738/1439146660730245212/Phep_Mau_Lofi.mp3?ex=69197545&is=691823c5&hm=a39e5d78814a1da1b8d95fff8fff24c73f911027e96ab7a750e4432bd19c8236&' 
+                }
+            ];
+            
+            let currentSongIndex = 0;
+
+            function loadSong(song) {
+                songTitle.textContent = song.title;
+                audio.src = song.src;
+                
+                currentTimeDisplay.textContent = "0:00";
+                durationDisplay.textContent = "0:00";
+                timeline.value = 0;
+            }
+
+            function formatTime(seconds) {
+                if (isNaN(seconds)) {
+                    return "0:00";
+                }
+                const minutes = Math.floor(seconds / 60);
+                const secs = Math.floor(seconds % 60);
+                return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
+            }
+
+            audio.addEventListener('loadedmetadata', () => {
+                durationDisplay.textContent = formatTime(audio.duration);
+                timeline.max = audio.duration;
+            });
+
+            audio.addEventListener('timeupdate', () => {
+                timeline.value = audio.currentTime;
+                currentTimeDisplay.textContent = formatTime(audio.currentTime);
+            });
+
+            function playSong() {
+                player.classList.add('playing');
+                playPauseBtn.querySelector('.play').style.display = 'none';
+                playPauseBtn.querySelector('.pause').style.display = 'block';
+                audio.play();
+            }
+            
+            function pauseSong() {
+                player.classList.remove('playing');
+                playPauseBtn.querySelector('.play').style.display = 'block';
+                playPauseBtn.querySelector('.pause').style.display = 'none';
+                audio.pause();
+            }
+
+            playPauseBtn.addEventListener('click', () => {
+                const isPlaying = player.classList.contains('playing');
+                if (isPlaying) {
+                    pauseSong();
+                } else {
+                    playSong();
+                }
+            });
+
+            timeline.addEventListener('input', () => {
+                audio.currentTime = timeline.value;
+            });
+            
+            function playNextSong() {
+                currentSongIndex++;
+                if (currentSongIndex >= songs.length) {
+                    currentSongIndex = 0; 
+                }
+                loadSong(songs[currentSongIndex]);
+                playSong();
+            }
+            
+            function playPrevSong() {
+                currentSongIndex--;
+                if (currentSongIndex < 0) {
+                    currentSongIndex = songs.length - 1; 
+                }
+                loadSong(songs[currentSongIndex]);
+                playSong();
+            }
+            
+            nextBtn.addEventListener('click', playNextSong);
+            prevBtn.addEventListener('click', playPrevSong);
+
+            audio.addEventListener('ended', playNextSong);
+            
+            loadSong(songs[currentSongIndex]);
+        
+        }); 
+    </script>
+</body>
+</html>
